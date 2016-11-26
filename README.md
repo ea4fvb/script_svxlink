@@ -1,6 +1,6 @@
 # script_svxlink
-Para instalar script
-desde la consola de linux
+Para instalar el script
+desde la consola de linux entrar los siguientes comandos:
 
 sudo apt-get install git
 
