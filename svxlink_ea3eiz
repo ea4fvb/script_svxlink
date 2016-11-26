@@ -1,0 +1,92 @@
+#!/bin/bash
+# script par ainstalar svxlink 15.11
+while true
+do
+clear
+echo " "
+echo "   ************************************************"
+echo "   *  MENU PARA INSTALAR SVXLINK 15.11 EN UBUNTU  *"
+echo "   *                      EA3EIZ                  *"
+echo "   ************************************************"
+echo " "
+echo "   1) Actualizar Dispositivo (update y upgrade)"
+echo "   2) Instalar svxlink 15.11"
+echo ""
+echo "   x)  <Para Salir>"
+echo ""
+
+echo "   Por favor, elige una opcion... 1, 2, x " 
+read escoger_menu
+echo ""
+
+case $escoger_menu in
+1) echo ""
+
+while true
+do
+clear
+
+	        read -p 'Quieres actualizar Si/No: ' actualizar
+		    case $actualizar in
+			[sS]* ) echo ""
+			echo "Estado: Actualizando >>>>>"
+			sudo apt-get update
+			sudo apt-get upgrade
+			echo ""
+			echo "Ok, se ha actualizado todo correctamente"
+			echo ""
+			break;;
+			[nN]* ) echo ""
+			break;;
+			#* )	echo "Por favor elige Y o N";;
+esac
+done;;
+2) 	echo ""
+
+while true
+do
+clear
+			echo ""
+			echo ""
+			echo ""
+		    read -p 'Quieres descargar e instalar svxlink Si/No ' installvar
+			case $installvar in
+			[sS]* ) echo ""
+			echo "Descargando svxlink 15.11"
+            wget https://github.com/sm0svx/svxlink/archive/15.11.tar.gz
+			tar xzvf 15.11.tar.gz
+			sudo apt-get install g++ make libsigc++-2.0-dev libgsm1-dev libpopt-dev tcl8.5-dev libgcrypt11-dev libspeex-dev libasound2-dev alsa-utils vorbis-tools  cmake libqt4-dev
+			cd svxlink-15.11
+			cd src	
+			mkdir build
+			cd build
+			cmake ..
+			make
+			sudo adduser svxlink
+			sudo make install
+			sudo ldconfig –v
+			break;;
+			[nN]* ) echo ""
+			echo ""
+			echo ""
+			echo "Ok, volviendo al menu..."
+			echo ""
+			echo ""
+			echo ""
+			break;;			
+esac
+done;;
+	
+x) echo ""
+clear
+echo "   ************************************************"
+echo "   *  CERRANDO EL SCRIPT SVXLINK 15.11 EN UBUNTU  *"
+echo "   *                                              *"
+echo "   ************************************************"
+sleep 2
+clear
+exit;;	
+esac
+done
+
+
