@@ -4,4 +4,4 @@ desde la consola de linux
 
 sudo apt-get git
 
-sudo clone ea3eiz/script_svxlink
+sudo clone https://github.com/ea3eiz/script_svxlink/
