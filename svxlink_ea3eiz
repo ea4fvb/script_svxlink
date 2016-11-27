@@ -11,9 +11,9 @@ echo "   ************************************************"
 echo " "
 echo "   1) Actualizar Dispositivo (update y upgrade)"
 echo "   2) Instalar svxlink 15.11"
-echo "   3) Editar el fichero ModuleEchoLink.conf"
-echo "   4) Editar el fichero svxlink.conf"
-echo "   5) Terminar el proceso de instalacion"
+echo "   3) *** IMPORTANTE!! *** Terminar la istalacion del svxlink"
+echo "   4) Editar el fichero ModuleEchoLink.conf"
+echo "   5) Editar el fichero svxlink.conf"
 echo " "
 echo "   x)  <Para Salir>"
 echo ""
@@ -80,7 +80,7 @@ clear
 esac
 done;;
 
-3) 	echo ""
+4) 	echo ""
 
 while true
 do
@@ -108,7 +108,7 @@ esac
 
 done;;
 
-4) 	echo ""
+5) 	echo ""
 
 while true
 do
@@ -136,7 +136,7 @@ esac
 
 done;;
 
-5) 	echo ""
+3) 	echo ""
 
 while true
 do
