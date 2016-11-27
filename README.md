@@ -1,7 +1,7 @@
 # script_svxlink
 INSTRUCCIONE PARA INSTALAR EL SCRIPT
 
-Desde la consola de linux entrar los siguientes comandos:
+Desde la consola de linux o raspberry, entrar los siguientes comandos:
 
 sudo apt-get install git
 
