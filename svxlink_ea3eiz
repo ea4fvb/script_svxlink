@@ -144,8 +144,8 @@ clear
 			echo ""
 			echo ""
 			echo ""
-		    read -p 'Quieres Modificar el archivo svxlink.conf Si/No ' installvar3
-			case $installvar3 in
+		    read -p 'Quieres Modificar el archivo svxlink.conf Si/No ' installvar4
+			case $installvar4 in
 			[sS]* ) echo ""
 clear
 			echo "Modificando el archivo svxlink.conf"
