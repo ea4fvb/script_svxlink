@@ -7,7 +7,7 @@ sudo apt-get install git
 
 git clone https://github.com/ea3eiz/script_svxlink/
 
-sudo chmod 777 script_svxlink
+sudo chmod 777 -R script_svxlink
 
 cd script_svxlink
 
