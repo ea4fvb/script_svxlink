@@ -3,6 +3,8 @@ INSTRUCCIONES PARA INSTALAR EL SCRIPT
 
 Desde la consola de linux o raspberry, entrar los siguientes comandos:
 
+cd ~
+
 sudo apt-get install git
 
 git clone https://github.com/ea3eiz/script_svxlink/
