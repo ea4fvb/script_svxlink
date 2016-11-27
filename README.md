@@ -27,7 +27,7 @@ Sigue las instrucciones del menú del script
    x)  Para Salir
 
    Por favor, elige una opcion... 1, 2, x
-   ================================================
+   
 
 
 Cuando termines de usar el menú, lanza el svxlink como:
