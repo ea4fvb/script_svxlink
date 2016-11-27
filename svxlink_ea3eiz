@@ -195,11 +195,11 @@ done;;
 	
 10) echo ""
 clear
-echo "   ************************************************"
-echo "   *"
-echo "   *      CERRANDO SCRIPT SVXLINK 15.11 BY EA3EIZ"
-echo "   *"
-echo "   ************************************************"
+echo "   **************************************************"
+echo "   *                                                *"
+echo "   *     CERRANDO SCRIPT SVXLINK 15.11 BY EA3EIZ    *"
+echo "   *                                                *"
+echo "   **************************************************"
 sleep 3
 clear
 exit;;	
