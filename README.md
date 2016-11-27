@@ -9,4 +9,4 @@ git clone https://github.com/ea3eiz/script_svxlink/
 
 cd script_svxlink
 
-./svxlink_ea3eiz
+sudo ./svxlink_ea3eiz
