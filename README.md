@@ -30,10 +30,12 @@ Sigue las instrucciones del menú del script
    3) Editar el fichero ModuleEchoLink.conf
    
    4) Editar el fichero svxlink.conf
+   
+   5) Terminar el proceso de instalacion
 
    x)  Para Salir
 
-   Por favor, elige una opcion... 1, 2, 3, 4,  x
+   Por favor, elige una opcion... 1, 2, 3, 4, 5,  x
    
 ----------------------------------------------------
 
