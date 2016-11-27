@@ -15,6 +15,9 @@ sudo ./svxlink_ea3eiz
 
 Sigue las instrucciones del menú del script
 
+
+
+
    ************************************************
    *  MENU PARA INSTALAR SVXLINK 15.11 EN UBUNTU  *
    *                      EA3EIZ                  *
@@ -28,6 +31,9 @@ Sigue las instrucciones del menú del script
 
    Por favor, elige una opcion... 1, 2, x
    
+----------------------------------------------------
+
+
 
 
 Cuando termines de usar el menú, lanza el svxlink como:
