@@ -33,7 +33,7 @@ Sigue las instrucciones del menú del script
 
    x)  Para Salir
 
-   Por favor, elige una opcion... 1, 2, x
+   Por favor, elige una opcion... 1, 2, 3, 4,  x
    
 ----------------------------------------------------
 
