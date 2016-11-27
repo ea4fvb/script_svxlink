@@ -1,5 +1,5 @@
 # script_svxlink
-INSTRUCCIONE PARA INSTALAR EL SCRIPT
+INSTRUCCIONES PARA INSTALAR EL SCRIPT
 
 Desde la consola de linux o raspberry, entrar los siguientes comandos:
 
