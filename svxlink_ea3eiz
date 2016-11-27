@@ -3,7 +3,7 @@
 while true
 do
 clear
-e
+
 echo "   ************************************************************************"
 echo "   *  MENU PARA INSTALAR SVXLINK 15.11 y QTEL EN LINUX o RASPBERRY PI     *"
 echo "   *                           by EA3EIZ                                  *"
