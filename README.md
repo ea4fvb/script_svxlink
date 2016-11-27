@@ -30,10 +30,13 @@ Sigue las instrucciones del menú del script
    ================================================
 
 
+Cuando termines de usar el menú, lanza el svxlink como:
 
-Si al terminar nos da el error:svxlink: error while loading shared libraries: libasynccpp.so.1.4
+sudo svxlink
 
-ejecutar el comando:
+Si te arojara el error while loading shared libraries: libasynccpp.so.1.4
+
+Ejecuta el comando siguiente y se solucionará el error mencionado:
 
 sudo ldconfig -v
 
