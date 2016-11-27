@@ -34,6 +34,7 @@ Sigue las instrucciones del menú del script
    5) Editar el fichero svxlink.conf
    
    6) Colocar autoarranque del svxlink al iniciar Linux o Raspberry pi
+   
      Agregar: sudo svxlink justo antes de la linea exit 0
 
   10)  Para Salir
