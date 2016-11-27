@@ -14,7 +14,7 @@ echo "   2) Instalar svxlink 15.11"
 echo "   3) *** IMPORTANTE!! *** Terminar la istalacion del svxlink"
 echo "   4) Editar el fichero ModuleEchoLink.conf"
 echo "   5) Editar el fichero svxlink.conf"
-echo "   6) Colocar autoarranque.Añadir sudo svxlink justo antes de exit 0"
+echo "   6) Colocar autoarranque.escribir: sudo svxlink justo antes de exit 0"
 echo " "
 echo "   10)  <Para Salir>"
 echo ""
@@ -170,7 +170,7 @@ clear
 			echo ""
 			echo ""
 			echo ""
-		    read -p 'Quieres que al inicioar el dispositivo, arranque el svxlink? Si/No ' installvar6
+		    read -p 'Quieres que al iniciar el dispositivo, arranque el svxlink? Si/No ' installvar6
 			case $installvar6 in
 			[sS]* ) echo ""
 clear
