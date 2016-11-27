@@ -46,10 +46,5 @@ Cuando termines de usar el menú, lanza el svxlink como:
 
 sudo svxlink
 
-Si te arojara el error while loading shared libraries: libasynccpp.so.1.4
-
-Ejecuta el comando siguiente y se solucionará el error mencionado:
-
-sudo ldconfig -v
 
 
