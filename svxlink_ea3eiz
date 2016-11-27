@@ -51,7 +51,7 @@ clear
 			echo ""
 			echo ""
 			echo ""
-		    read -p 'Quieres descargar e instalar svxlink Si/No ' installvar
+		    read -p 'Descargar e instalar svxlink Si/No ' installvar
 			case $installvar in
 			[sS]* ) echo ""
 			echo "Descargando svxlink 15.11"
