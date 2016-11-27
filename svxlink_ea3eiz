@@ -15,7 +15,7 @@ echo "   3) *** IMPORTANTE!! *** Terminar la istalacion del svxlink"
 echo "   4) Editar el fichero ModuleEchoLink.conf"
 echo "   5) Editar el fichero svxlink.conf"
 echo " "
-echo "   x)  <Para Salir>"
+echo "   10)  <Para Salir>"
 echo ""
 
 echo "   Por favor, elige una opcion... 1, 2, 3, 4, 5,  x " 
@@ -163,7 +163,7 @@ esac
 
 done;;
 	
-x) echo ""
+10) echo ""
 clear
 echo "   ************************************************"
 echo "   *  CERRANDO EL SCRIPT SVXLINK 15.11 EN UBUNTU  *"
