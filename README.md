@@ -18,10 +18,10 @@ Sigue las instrucciones del menú del script
 
 
 
-   ************************************************
-   *  MENU PARA INSTALAR SVXLINK 15.11 EN UBUNTU  *
-   *                      EA3EIZ                  *
-   ************************************************
+   **************************************************************
+   *  MENU PARA INSTALAR SVXLINK 15.11 EN LINUX o RASPBERRY PI  *
+   *                      by EA3EIZ                             *
+   **************************************************************
 
    1) Actualizar Dispositivo (update y upgrade)
    
@@ -33,13 +33,14 @@ Sigue las instrucciones del menú del script
    
    5) Editar el fichero svxlink.conf
    
-   6) Colocar autoarranque.Escribir: sudo svxlink justo antes de exit 0
+   6) Colocar autoarranque del svxlink al iniciar Linux o Raspberry pi
+     Agregar: sudo svxlink justo antes de la linea exit 0
 
-   10)  Para Salir
+  10)  Para Salir
 
-   Por favor, elige una opcion... 1, 2, 3, 4, 5, 6,  x
+   Por favor, elige una opcion... 1, 2, 3, 4, 5, 6, 10
    
-----------------------------------------------------
+----------------------------------------------------------------------
 
 
 
