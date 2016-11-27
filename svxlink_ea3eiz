@@ -67,6 +67,8 @@ clear
 			cd build
 			cmake ..
 			make
+			sleep 5
+			sudo adduser svxlink
 			sudo make install
 			break;;
 			[nN]* ) echo ""
