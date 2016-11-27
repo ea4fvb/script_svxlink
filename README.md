@@ -31,11 +31,13 @@ Sigue las instrucciones del menú del script
    
    4) Editar el fichero svxlink.conf
    
-   5) Terminar el proceso de instalacion
+   5) Editar el fichero svxlink.conf
+   
+   6) Colocar autoarranque.Escribir: sudo svxlink justo antes de exit 0
 
-   x)  Para Salir
+   10)  Para Salir
 
-   Por favor, elige una opcion... 1, 2, 3, 4, 5,  x
+   Por favor, elige una opcion... 1, 2, 3, 4, 5, 6,  x
    
 ----------------------------------------------------
 
