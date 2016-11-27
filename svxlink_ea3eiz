@@ -5,8 +5,8 @@ do
 clear
 e
 echo "   ************************************************************************"
-echo "   *  MENU PARA INSTALAR SVXLINK 15.11 y QTEL EN LINUX o RASPBERRY PI  *"
-echo "   *                           by EA3EIZ                               *"
+echo "   *  MENU PARA INSTALAR SVXLINK 15.11 y QTEL EN LINUX o RASPBERRY PI     *"
+echo "   *                           by EA3EIZ                                  *"
 echo "   ************************************************************************"
 echo " "
 echo "   1) Actualizar Dispositivo (update y upgrade)"
