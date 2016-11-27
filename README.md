@@ -1,5 +1,5 @@
 # script_svxlink
-Instrucciones para Instalar el script
+INSTRUCCIONE PARA INSTALAR EL SCRIPT
 
 Desde la consola de linux entrar los siguientes comandos:
 
