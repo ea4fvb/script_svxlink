@@ -6,3 +6,7 @@ Desde la consola de linux entrar los siguientes comandos:
 sudo apt-get install git
 
 git clone https://github.com/ea3eiz/script_svxlink/
+
+cd script_svxlink
+
+./svxlink_ea3eiz
