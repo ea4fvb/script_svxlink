@@ -11,7 +11,7 @@ sudo chmod 777 -R script_svxlink
 
 cd script_svxlink
 
-sudo ./svxlink_ea3eiz
+sudo sh svxlink_ea3eiz
 
 Sigue las instrucciones del menú del script
 
