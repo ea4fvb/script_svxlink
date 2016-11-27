@@ -4,10 +4,10 @@ while true
 do
 clear
 e
-echo "   *****************************************************************"
+echo "   ************************************************************************"
 echo "   *  MENU PARA INSTALAR SVXLINK 15.11 y QTEL EN LINUX o RASPBERRY PI  *"
 echo "   *                           by EA3EIZ                               *"
-echo "   *****************************************************************"
+echo "   ************************************************************************"
 echo " "
 echo "   1) Actualizar Dispositivo (update y upgrade)"
 echo "   2) Instalar svxlink 15.11"
