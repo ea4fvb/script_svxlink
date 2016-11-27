@@ -24,7 +24,7 @@ Sigue las instrucciones del menú del script
    
    2) Instalar svxlink 15.11
 
-   x)  <Para Salir>
+   x)  Para Salir
 
    Por favor, elige una opcion... 1, 2, x
    ================================================
