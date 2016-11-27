@@ -18,10 +18,10 @@ Sigue las instrucciones del menú del script
 
 
 
-   **************************************************************
-   *  MENU PARA INSTALAR SVXLINK 15.11 EN LINUX o RASPBERRY PI  *
-   *                      by EA3EIZ                             *
-   **************************************************************
+   ********************************************************************
+   *  MENU PARA INSTALAR SVXLINK 15.11 y QTEL EN LINUX o RASPBERRY PI *
+   *                            by EA3EIZ                             *
+   ********************************************************************
 
    1) Actualizar Dispositivo (update y upgrade)
    
