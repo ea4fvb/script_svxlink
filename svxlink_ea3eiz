@@ -5,7 +5,7 @@ do
 clear
 echo " "
 echo "   ************************************************"
-echo "   *  MENU PARA INSTALAR SVXLINK 15.11 EN LINUX         *"
+echo "   *  MENU PARA INSTALAR SVXLINK 15.11 EN LINUX *"
 echo "   *                      EA3EIZ                  *"
 echo "   ************************************************"
 echo " "
@@ -14,6 +14,7 @@ echo "   2) Instalar svxlink 15.11"
 echo "   3) *** IMPORTANTE!! *** Terminar la istalacion del svxlink"
 echo "   4) Editar el fichero ModuleEchoLink.conf"
 echo "   5) Editar el fichero svxlink.conf"
+echo "   6) Colocar autoarranque.Añadir sudo svxlink justo antes de exit 0"
 echo " "
 echo "   10)  <Para Salir>"
 echo ""
@@ -148,6 +149,34 @@ clear
 clear
 			echo "Modificando el archivo svxlink.conf"
                               sudo ldconfig -v
+			break;;
+			[nN]* ) echo ""
+			echo ""
+			echo ""
+			echo "volver"
+			echo ""
+			echo ""
+			echo ""
+			break;;			
+esac
+
+done;;
+
+6) 	echo ""
+
+while true
+do
+clear
+			echo ""
+			echo ""
+			echo ""
+		    read -p 'Quieres que al inicioar el dispositivo, arranque el svxlink? Si/No ' installvar6
+			case $installvar6 in
+			[sS]* ) echo ""
+clear
+			echo "Colocando autoarranque en rc.local"
+      sudo nano /etc/rc.local
+      sleep 2
 			break;;
 			[nN]* ) echo ""
 			echo ""
