@@ -149,7 +149,7 @@ clear
 			[sS]* ) echo ""
 clear
 			echo "Modificando el archivo svxlink.conf"
-                              sudo ldconfig –v
+                              sudo ldconfig -v
 			break;;
 			[nN]* ) echo ""
 			echo ""
