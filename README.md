@@ -31,7 +31,7 @@ Sigue las instrucciones del menú del script
    
    3) *** IMPORTANTE!! *** Terminar la istalacion del svxlink
    
-   4) Editar el fichero svxlink.conf
+   4) Editar el fichero ModuleEchoLink.conf
    
    5) Editar el fichero svxlink.conf
    
