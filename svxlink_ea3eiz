@@ -11,7 +11,7 @@ echo "   ********************************************************************"
 echo " "
 echo "   1) Actualizar Dispositivo (update y upgrade)"
 echo "   2) Instalar svxlink 15.11"
-echo "   3) *** IMPORTANTE!! *** Terminar la instalacion del svxlink"
+echo "   3) *** IMPORTANTE!! *** Este punto Ejecuta el comando ldconfig -v"
 echo "   4) Editar el fichero ModuleEchoLink.conf"
 echo "   5) Editar el fichero svxlink.conf"
 echo "   6) Colocar autoarranque del svxlink al iniciar Linux o Raspberry pi"
@@ -146,11 +146,11 @@ clear
 			echo ""
 			echo ""
 			echo ""
-		    read -p 'Quieres Modificar el archivo svxlink.conf Si/No ' installvar4
+		    read -p 'Quieres enviar el comando ldconfig -v Si/No ' installvar4
 			case $installvar4 in
 			[sS]* ) echo ""
 clear
-			echo "Modificando el archivo svxlink.conf"
+			echo "Modificando el archivo ldconfig -v"
                               sudo ldconfig -v
 			break;;
 			[nN]* ) echo ""

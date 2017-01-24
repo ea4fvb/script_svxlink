@@ -29,7 +29,7 @@ Sigue las instrucciones del menú del script
    
    2) Instalar svxlink 15.11
    
-   3) *** IMPORTANTE!! *** Terminar la istalacion del svxlink
+   3) *** IMPORTANTE!! *** Este punto Ejecuta el comando ldconfig -v
    
    4) Editar el fichero ModuleEchoLink.conf
    
