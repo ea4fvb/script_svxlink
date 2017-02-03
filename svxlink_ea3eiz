@@ -15,7 +15,6 @@ echo "   3) *** IMPORTANTE!! *** Este punto Ejecuta el comando ldconfig -v"
 echo "   4) Editar el fichero ModuleEchoLink.conf"
 echo "   5) Editar el fichero svxlink.conf"
 echo "   6) Colocar autoarranque del svxlink al iniciar Linux o Raspberry pi"
-echo "      Agregar: sudo svxlink justo antes de la linea exit 0"
 echo " "
 echo "   10)  <Para Salir>"
 echo ""
@@ -178,7 +177,7 @@ clear
 			[sS]* ) echo ""
 clear
 			echo "Colocando autoarranque en rc.local"
-      sudo nano /etc/rc.local
+			sed -i "13c sudo svxlink" /etc/rc.local 
       sleep 2
 			break;;
 			[nN]* ) echo ""
