@@ -29,18 +29,13 @@ Sigue las instrucciones del menú del script
    
    2) Instalar svxlink 15.11
    
-   3) *** IMPORTANTE!! *** Este punto Ejecuta el comando ldconfig -v
-   
-   4) Editar el fichero ModuleEchoLink.conf
-   
-   5) Editar el fichero svxlink.conf
-   
-   6) Colocar autoarranque del svxlink al iniciar Linux o Raspberry pi  
-     Agregar: sudo svxlink justo antes de la linea exit 0
+   3) Editar los ficheros ModuleEchoLink.conf y svxlink.conf
+     
+   4) Colocar autoarranque del svxlink al iniciar Linux, Orange pi o Raspberry pi  
 
-  10)  Para Salir
+   0)  Para Salir
 
-   Por favor, elige una opcion... 1, 2, 3, 4, 5, 6, 10
+   Escoge una opción.. 1, 2, 3, 4, 0
    
 ----------------------------------------------------------------------
 
