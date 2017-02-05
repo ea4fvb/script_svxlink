@@ -89,7 +89,7 @@ clear
 			case $seguir in
 			[sS]* ) echo ""
 clear
-                              sudo sh editar_svxlink.sh
+                              lxterminal --geometry=100x40 -e sudo sh editar_svxlink.sh
 			break;;
 			[nN]* ) echo ""
 			echo ""
