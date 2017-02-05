@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 # script para instalar md380tools
 while true
 do
@@ -34,29 +34,33 @@ echo "\33[1;36m    8)\33[1;32m Abrir fichero ModuleEchoLink.conf para hacer cual
 echo ""
 echo "\33[1;31m   svxlink.conf"
 echo -n "\33[1;36m    9)\33[0m Indicativo Baliza    - \33[1;33m"
-var1= sed -n '20p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '22p'  /usr/local/etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   10)\33[0m Intervalo Baliza     - \33[1;33m"
-var1= sed -n '21p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '23p'  /usr/local/etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   11)\33[0m Cambiar audio [Rx1]  - \33[1;33m"
-var1= sed -n '62p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '158p'  /usr/local/etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   12)\33[0m Cambiar audio [Tx1]  - \33[1;33m"
-var1= sed -n '88p'  /usr/local/etc/svxlink/svxlink.conf
-echo -n "\33[1;36m   13)\33[0m Cambiar el tono      - \33[1;33m"
-var1= sed -n '70p'  /usr/local/etc/svxlink/svxlink.conf
-echo "\33[1;36m   14)\33[1;32m Modem Soundcard o similar \33[1;33m"
-echo "\33[1;36m   15)\33[1;32m Gpio con transistor y resistencia (este por defecto)\33[1;33m"
+var1= sed -n '224p'  /usr/local/etc/svxlink/svxlink.conf
+echo -n "\33[1;36m   13)\33[0m Cambiar a TONOS      - \33[1;33m"
+var1= sed -n '170p'  /usr/local/etc/svxlink/svxlink.conf
+echo -n "\33[1;36m   14)\33[0m Cambiar a VOX        - \33[1;33m"
+var1= sed -n '160p'  /usr/local/etc/svxlink/svxlink.conf
+echo -n "\33[1;36m   15)\33[0m Modificar VOX_THRESH - \33[1;33m"
+var1= sed -n '168p'  /usr/local/etc/svxlink/svxlink.conf
+echo "\33[1;36m   16)\33[1;32m Modem Soundcard o similar (está este por defecto)\33[1;33m"
+echo "\33[1;36m   17)\33[1;32m Modem Gpio con transistor y resistencia\33[1;33m"
 #var1= sed -n '90p'  /usr/local/etc/svxlink/svxlink.conf
 #var1= sed -n '92p'  /usr/local/etc/svxlink/svxlink.conf
 #var1= sed -n '93p'  /usr/local/etc/svxlink/svxlink.conf
-echo "\33[1;36m   16)\33[1;33m Abrir fichero svxlink.conf para hacer cualquier otro cambio\33[1;33m"
+echo "\33[1;36m   18)\33[1;33m Abrir fichero svxlink.conf para hacer cualquiergpio otro cambio\33[1;33m"
 echo ""
 echo "   ========================================================================"
 echo ""
-echo "\33[1;36m   17)\33[1;33m Abrir control de audio. [Esc] para cerrarlo \33[1;33m"
+echo "\33[1;36m   19)\33[1;33m Abrir control de audio. [Esc] para cerrarlo \33[1;33m"
 echo ""
 echo "\33[1;36m    0)\33[1;34m Salir del script \33[1;31m OJO!! no salir con ctrl+c ni con la x"
 echo ""
-echo "\33[1;36m   Escoge una opción.. 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,0 \33[1;33m " 
+echo "\33[1;36m   Escoge una opción.. 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,0 \33[1;33m " 
 read escoger_menu
 
 
@@ -194,8 +198,8 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "20c CALLSIGN=$callsign" /usr/local/etc/svxlink/svxlink.conf
-           sed -i "35c CALLSIGN=$callsign" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "22c CALLSIGN=$callsign" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "47c CALLSIGN=$callsign" /usr/local/etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -209,7 +213,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "21c SHORT_IDENT_INTERVAL=$baliza" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "23c SHORT_IDENT_INTERVAL=$baliza" /usr/local/etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -223,7 +227,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "62c AUDIO_DEV=alsa:plughw:$audiorx" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "158c AUDIO_DEV=alsa:plughw:$audiorx" /usr/local/etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -236,7 +240,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "88c AUDIO_DEV=alsa:plughw:$audiotx" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "224c AUDIO_DEV=alsa:plughw:$audiotx" /usr/local/etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -252,7 +256,16 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "70c CTCSS_FQ=$tono" /usr/local/etc/svxlink/svxlink.conf
+
+sed -i "160c SQL_DET=CTCSS" /usr/local/etc/svxlink/svxlink.conf
+sed -i "170c CTCSS_FQ=$tono" /usr/local/etc/svxlink/svxlink.conf
+sed -i "169c CTCSS_MODE=3" /usr/local/etc/svxlink/svxlink.conf
+sed -i "171c CTCSS_SNR_OFFSET=0" /usr/local/etc/svxlink/svxlink.conf
+sed -i "172c CTCSS_OPEN_THRESH=6" /usr/local/etc/svxlink/svxlink.conf
+sed -i "173c CTCSS_CLOSE_THRESH=4" /usr/local/etc/svxlink/svxlink.conf
+sed -i "174c CTCSS_BPF_LOW=60" /usr/local/etc/svxlink/svxlink.conf
+sed -i "175c CTCSS_BPF_HIGH=80" /usr/local/etc/svxlink/svxlink.conf
+
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -261,21 +274,58 @@ done;;
 14) echo ""
 while true
 do
-
-
-           	        read -p 'Pulsa enter para Usar Modem Soundcard o similar: ' var2
-                        actualizar=S 
+           	        read -p 'Quieres Cambiar a VOX? S/N' actualizar
+                       
                         case $actualizar in
 			[sS]* ) echo ""
-sed -i "90c PTT_PORT=/dev/ttyUSB0" /usr/local/etc/svxlink/svxlink.conf
-sed -i "92c PTT_TYPE=SerialPin" /usr/local/etc/svxlink/svxlink.conf
-sed -i "93c PTT_PIN=DTRRTS" /usr/local/etc/svxlink/svxlink.conf
+
+sed -i "160c SQL_DET=VOX" /usr/local/etc/svxlink/svxlink.conf
+sed -i "169c #CTCSS_MODE=3" /usr/local/etc/svxlink/svxlink.conf
+sed -i "171c #CTCSS_SNR_OFFSET=0" /usr/local/etc/svxlink/svxlink.conf
+sed -i "172c #CTCSS_OPEN_THRESH=6" /usr/local/etc/svxlink/svxlink.conf
+sed -i "173c #CTCSS_CLOSE_THRESH=4" /usr/local/etc/svxlink/svxlink.conf
+sed -i "174c #CTCSS_BPF_LOW=60" /usr/local/etc/svxlink/svxlink.conf
+sed -i "175c #CTCSS_BPF_HIGH=80" /usr/local/etc/svxlink/svxlink.conf
+
 			break;;
 			[nN]* ) echo ""
 			break;;
 esac
 done;;
 15) echo ""
+while true
+do
+           	        read -p 'Introduce el valor del VOX_THRESH: ' tono
+                        actualizar=S 
+                        case $actualizar in
+			[sS]* ) echo ""
+sed -i "168c VOX_THRESH=$tono" /usr/local/etc/svxlink/svxlink.conf
+			break;;
+			[nN]* ) echo ""
+			break;;
+esac
+done;;
+16) echo ""
+while true
+do
+
+
+           	        read -p 'Pulsa enter para Usar Modem Soundcard o similar: ' var2
+                        actualizar=S 
+                        case $actualizar in
+			[sS]* ) echo ""
+sed -i "227c PTT_PORT=/dev/ttyUSB0" /usr/local/etc/svxlink/svxlink.conf
+sed -i "226c PTT_TYPE=SerialPin" /usr/local/etc/svxlink/svxlink.conf
+sed -i "228c PTT_PIN=DTRRTS" /usr/local/etc/svxlink/svxlink.conf
+sed -i "10c #" /etc/rc.local
+sed -i "11c #" /etc/rc.local
+sed -i "12c #" /etc/rc.local
+			break;;
+			[nN]* ) echo ""
+			break;;
+esac
+done;;
+17) echo ""
 while true
 do
 
@@ -287,12 +337,16 @@ do
 sed -i "90c PTT_PORT=/dev/ttyAMA0" /usr/local/etc/svxlink/svxlink.conf
 sed -i "92c PTT_TYPE=GPIO" /usr/local/etc/svxlink/svxlink.conf
 sed -i "93c PTT_PIN=gpio17" /usr/local/etc/svxlink/svxlink.conf
+sed -i "10c echo “17” > /sys/class/gpio/export" /etc/rc.local
+sed -i "11c chmod 777 -R /sys/class/gpio/gpio17" /etc/rc.local
+sed -i "12c echo “out” > /sys/class/gpio/gpio17/direction" /etc/rc.local
+sed -i "14c exit 0" /etc/rc.local
 			break;;
 			[nN]* ) echo ""
 			break;;
 esac
 done;;
-16) echo ""
+18) echo ""
 while true
 do
 
@@ -307,7 +361,7 @@ do
 			break;;
 esac
 done;;
-17) echo ""
+19) echo ""
 
 while true
 do
