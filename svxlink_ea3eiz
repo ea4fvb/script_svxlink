@@ -112,12 +112,12 @@ do
 clear
                               seguir=S
 			case $seguir in
+			[sS]* ) echo ""
+                              clear
 			cd ~/
 			sudo mkdir .config/autostart/inicio_svxlink.desktop
 			sed -i "1c [Desktop Entry]" .config/autostart
 			sudo chmod 755 .config/autostart/inicio_svxlink.desktop	
-			[sS]* ) echo "" 
-      sleep 2
 			break;;
 			[nN]* ) echo ""
 			echo ""
