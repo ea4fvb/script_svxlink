@@ -12,7 +12,7 @@ echo " "
 echo "\33[1;36m   1)\33[0m Actualizar Dispositivo (update y upgrade)"
 echo "\33[1;36m   2)\33[0m Instalar svxlink 15.11"
 echo "\33[1;36m   3)\33[0m Editar el fichero ModuleEchoLink.conf y svxlink"
-echo "\33[1;36m   4)\33[0m Colocar autoarranque del svxlink al iniciar Linux, Orange pi o Raspberry pi"
+echo "\33[1;36m   4)\33[0m Poner en el autoarranque el svxlink"
 echo " "
 echo "\33[1;36m   0)\33[1;34m  <Para Salir>"
 echo ""
@@ -89,6 +89,7 @@ clear
 			case $seguir in
 			[sS]* ) echo ""
 clear
+                              lxterminal --geometry=100x40 -e sudo sh editar_svxlink.sh
                               lxterminal --geometry=100x40 -e sudo sh editar_svxlink.sh
 			break;;
 			[nN]* ) echo ""
