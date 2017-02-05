@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=autoarranque svxlink
+Comment=by EA3EIZ
+Exec=sh -c "cd ~/; lxterminal --geometry=55x30 -e sudo svxlink"
+Type=Application
+Terminal=true
