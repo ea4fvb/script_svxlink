@@ -87,7 +87,7 @@ done;;
 while true
 do
 clear
-                              $seguir=S
+                              seguir=S
 			case $seguir in
 			[sS]* ) echo ""
 clear
