@@ -11,12 +11,12 @@ echo "   ********************************************************************"
 echo " "
 echo "   1) Actualizar Dispositivo (update y upgrade)"
 echo "   2) Instalar svxlink 15.11"
-echo "   3) *************************"
-echo "   4) Editar el fichero ModuleEchoLink.conf y svxlink"
-echo "   5) *************************"
+echo "   3) *** IMPORTANTE!! *** Este punto Ejecuta el comando ldconfig -v"
+echo "   4) Editar el fichero ModuleEchoLink.conf"
+echo "   5) Editar el fichero svxlink.conf"
 echo "   6) Colocar autoarranque del svxlink al iniciar Linux o Raspberry pi"
 echo " "
-echo "   0)  <Para Salir>"
+echo "   10)  <Para Salir>"
 echo ""
 
 echo "   Por favor, elige una opcion... 1, 2, 3, 4, 5, 6, 10" 
@@ -57,7 +57,7 @@ clear
 			case $installvar in
 			[sS]* ) echo ""
 			echo "Descargando svxlink 15.11"
-                              wget https://github.com/sm0svx/svxlink/archive/15.11.tar.gz
+            wget https://github.com/sm0svx/svxlink/archive/15.11.tar.gz
 			tar xzvf 15.11.tar.gz
 			sudo apt-get install g++ make libsigc++-2.0-dev libgsm1-dev libpopt-dev tcl8.5-dev libgcrypt11-dev libspeex-dev libasound2-dev alsa-utils vorbis-tools  cmake libqt4-dev
 			cd svxlink-15.11
@@ -66,10 +66,9 @@ clear
 			cd build
 			cmake ..
 			make
-			sleep 3
+			sleep 5
 			sudo adduser svxlink
 			sudo make install
-			sudo ldconfig -v
 			break;;
 			[nN]* ) echo ""
 			echo ""
@@ -87,12 +86,16 @@ done;;
 while true
 do
 clear
-                              $seguir=S
-			case $seguir in
+			echo ""
+			echo ""
+			echo ""
+		    read -p 'Quieres Modificar el archivo ModuleEchoLink.conf Si/No ' installvar1
+			case $installvar1 in
 			[sS]* ) echo ""
 clear
-                              cd ..
-                              sudo sh editar_svxlink.sh
+			echo "Modificando el archivo ModuleEchoLink.conf"
+      sudo nano /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+      sleep 2
 			break;;
 			[nN]* ) echo ""
 			echo ""
@@ -105,18 +108,76 @@ clear
 esac
 
 done;;
+
+5) 	echo ""
+
+while true
+do
+clear
+			echo ""
+			echo ""
+			echo ""
+		    read -p 'Quieres Modificar el archivo svxlink.conf Si/No ' installvar3
+			case $installvar3 in
+			[sS]* ) echo ""
+clear
+			echo "Modificando el archivo svxlink.conf"
+      sudo nano /usr/local/etc/svxlink/svxlink.conf
+      sleep 2
+			break;;
+			[nN]* ) echo ""
+			echo ""
+			echo ""
+			echo "volver"
+			echo ""
+			echo ""
+			echo ""
+			break;;			
+esac
+
+done;;
+
+3) 	echo ""
+
+while true
+do
+clear
+			echo ""
+			echo ""
+			echo ""
+		    read -p 'Quieres enviar el comando ldconfig -v Si/No ' installvar4
+			case $installvar4 in
+			[sS]* ) echo ""
+clear
+			echo "Modificando el archivo ldconfig -v"
+                              sudo ldconfig -v
+			break;;
+			[nN]* ) echo ""
+			echo ""
+			echo ""
+			echo "volver"
+			echo ""
+			echo ""
+			echo ""
+			break;;			
+esac
+
+done;;
+
 6) 	echo ""
 
 while true
 do
 clear
-                              seguir=S
-			case $seguir in
-			cd ~/
-			sudo mkdir .config/autostart/inicio_svxlink.desktop
-			sed -i "1c [Desktop Entry]" .config/autostart
-			sudo chmod 755 .config/autostart/inicio_svxlink.desktop	
-			[sS]* ) echo "" 
+			echo ""
+			echo ""
+			echo ""
+		    read -p 'Quieres que al iniciar el dispositivo, arranque el svxlink? Si/No ' installvar6
+			case $installvar6 in
+			[sS]* ) echo ""
+clear
+			echo "Colocando autoarranque en rc.local"
+			sed -i "13c sudo svxlink" /etc/rc.local 
       sleep 2
 			break;;
 			[nN]* ) echo ""
