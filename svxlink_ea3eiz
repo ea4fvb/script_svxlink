@@ -140,8 +140,12 @@ clear
 			sudo mkdir /usr/local/share/svxlink/sounds/en_US
 			cd en_US-heather-16k
 			sudo cp -r * /usr/local/share/svxlink/sounds/en_US
-			echo "Ficheros de audio instalados correctamente"
-			sleep 3
+			clear
+			echo "\33[1;32m"
+			echo " ******************************************"
+			echo " *   Ficheros de audio instalados correctamente    *"
+			echo " ******************************************"
+			sleep 5
 			break;;
 			[nN]* ) echo ""
 			echo ""
