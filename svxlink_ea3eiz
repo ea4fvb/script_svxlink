@@ -13,6 +13,7 @@ echo "\33[1;36m   1)\33[0m Actualizar Dispositivo (update y upgrade)"
 echo "\33[1;36m   2)\33[0m Instalar svxlink 15.11"
 echo "\33[1;36m   3)\33[0m Editar el fichero ModuleEchoLink.conf y svxlink"
 echo "\33[1;36m   4)\33[0m Poner en el autoarranque el svxlink"
+echo "\33[1;36m   5)\33[0m Instalar ficheros de audio"
 echo " "
 echo "\33[1;36m   0)\33[1;34m  <Para Salir>"
 echo ""
@@ -125,7 +126,32 @@ clear
 esac
 
 done;;
-	
+5) 	echo ""
+
+while true
+do
+clear
+                              seguir=S
+			case $seguir in
+			[sS]* ) echo ""
+clear
+                              wget https://github.com/sm0svx/svxlink-sounds-en_US-heather/releases/download/14.08/svxlink-sounds-en_US-heather-16k-13.12.tar.bz2
+			tar jvfx svxlink-sounds-en_US-heather-16k-13.12.tar.bz2
+			sudo mkdir /usr/local/share/svxlink/sounds/en_US
+			cd en_US-heather16k
+			cp -r * /usr/local/share/svxlink/sounds/en_US
+			break;;
+			[nN]* ) echo ""
+			echo ""
+			echo ""
+			echo "volver"
+			echo ""
+			echo ""
+			echo ""
+			break;;			
+esac
+
+done;;	
 0) echo ""
 clear
 echo "   **************************************************"
