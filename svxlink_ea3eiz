@@ -142,9 +142,9 @@ clear
 			sudo cp -r * /usr/local/share/svxlink/sounds/en_US
 			clear
 			echo "\33[1;32m"
-			echo " ******************************************"
-			echo " *   Ficheros de audio instalados correctamente    *"
-			echo " ******************************************"
+			echo " *************************************************"
+			echo " *   Ficheros de audio instalados correctamente   *"
+			echo " *************************************************"
 			sleep 5
 			break;;
 			[nN]* ) echo ""
