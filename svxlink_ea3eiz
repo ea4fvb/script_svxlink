@@ -138,8 +138,10 @@ clear
                               wget https://github.com/sm0svx/svxlink-sounds-en_US-heather/releases/download/14.08/svxlink-sounds-en_US-heather-16k-13.12.tar.bz2
 			tar jvfx svxlink-sounds-en_US-heather-16k-13.12.tar.bz2
 			sudo mkdir /usr/local/share/svxlink/sounds/en_US
-			cd en_US-heather16k
-			cp -r * /usr/local/share/svxlink/sounds/en_US
+			cd en_US-heather-16k
+			sudo cp -r * /usr/local/share/svxlink/sounds/en_US
+			echo "Ficheros de audio instalados correctamente"
+			sleep 3
 			break;;
 			[nN]* ) echo ""
 			echo ""
