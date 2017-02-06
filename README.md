@@ -33,9 +33,11 @@ Sigue las instrucciones del menú del script
      
    4) Colocar autoarranque del svxlink al iniciar Linux, Orange pi o Raspberry pi  
 
+   5) Instalar ficheros de audio"
+   
    0)  Para Salir
 
-   Escoge una opción.. 1, 2, 3, 4, 0
+   Escoge una opción.. 1, 2, 3, 4, 5, 0
    
 ----------------------------------------------------------------------
 
