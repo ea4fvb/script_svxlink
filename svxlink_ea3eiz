@@ -90,22 +90,22 @@ clear
 	        read -p 'Quieres Poner los parametros por defecto en ModuleEchoLink.conf Si/No: ' actualizar
 		    case $actualizar in
 			[sS]* ) echo ""
-			echo ""
-			sed -i "4c TIMEOUT=0 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
-			sed -i "22c MAX_QSOS=1 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
-			sed -i "23c MAX_CONECCTIONS=2 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
-			sed -i "24c #LINK_IDLE_TIMEOUT=300 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
-			sed -i "26c AUTOCON_TIME=5 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
-			sed -i "27c TDESCRIPTION="Este nodo no permite conexciones\n" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
-			clear
-			
+			echo "\33[1;32m "
+			sed -i "4c TIMEOUT=0" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+			sed -i "22c MAX_QSOS=1" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+			sed -i "23c MAX_CONNECTIONS=2" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+			sed -i "24c #LINK_IDLE_TIMEOUT=300" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+			sed -i "26c AUTOCON_TIME=5" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+                        sed -i "29c DESCRIPTION=\"Este nodo no permite conexiones\\\n\"" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+
+clear
 			echo "Ok, se han puesto los parametros por defecto en ModuleEchoLink.con"
 			sleep 5
 			echo ""
 			break;;
 			[nN]* ) echo ""
 			break;;
-			#* )	echo "Por favor elige Y o N";;
+
 esac
 done;;
 
@@ -193,7 +193,7 @@ done;;
 
 0) echo ""
 clear
-echo "   **************************************************"
+echo "\33[1;37m   **************************************************"
 echo "   *                                                *"
 echo "   *     CERRANDO SCRIPT SVXLINK 15.11 BY EA3EIZ    *"
 echo "   *                                                *"
