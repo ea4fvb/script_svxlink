@@ -69,6 +69,12 @@ clear
 			sudo adduser svxlink
 			sudo make install
 			sudo ldconfig -v
+			sed -i "4c TIMEOUT=0 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
+			sed -i "22c MAX_QSOS=1 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
+			sed -i "23c MAX_CONECCTIONS=2 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
+			sed -i "24c #LINK_IDLE_TIMEOUT=300 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
+			sed -i "26c AUTOCON_TIME=5 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
+			sed -i "27c TDESCRIPTION="Este nodo no permite conexciones\n" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
 			break;;
 			[nN]* ) echo ""
 			echo ""
