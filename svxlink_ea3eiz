@@ -11,14 +11,15 @@ echo "   ********************************************************************"
 echo " "
 echo "\33[1;36m   1)\33[0m Actualizar Dispositivo (update y upgrade)"
 echo "\33[1;36m   2)\33[0m Instalar svxlink 15.11"
-echo "\33[1;36m   3)\33[0m Editar el fichero ModuleEchoLink.conf y svxlink"
+echo "\33[1;36m   3)\33[0m Poner parametros por defecto en ModuleEchoLink.conf"
 echo "\33[1;36m   4)\33[0m Poner en el autoarranque el svxlink"
 echo "\33[1;36m   5)\33[0m Instalar ficheros de audio"
+echo "\33[1;36m   6)\33[0m Abrir editor de los ficheros ModuleEchoLink.conf y svxlink"
 echo " "
 echo "\33[1;36m   0)\33[1;34m  <Para Salir>"
 echo ""
 
-echo "\33[1;36m   Escoge una opción.. 1, 2, 3, 4, 5, 0 \33[1;33m " 
+echo "\33[1;36m   Escoge una opción.. 1, 2, 3, 4, 5, 6, 0 \33[1;33m " 
 read escoger_menu
 echo ""
 
@@ -69,46 +70,46 @@ clear
 			sudo adduser svxlink
 			sudo make install
 			sudo ldconfig -v
+			break;;
+			[nN]* ) echo ""
+			echo ""
+			echo ""
+			echo "volver"
+			echo ""
+			echo ""
+			echo ""
+			break;;			
+esac
+done;;
+3) echo ""
+
+while true
+do
+clear
+
+	        read -p 'Quieres Poner los parametros por defecto en ModuleEchoLink.conf Si/No: ' actualizar
+		    case $actualizar in
+			[sS]* ) echo ""
+			echo ""
 			sed -i "4c TIMEOUT=0 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
 			sed -i "22c MAX_QSOS=1 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
 			sed -i "23c MAX_CONECCTIONS=2 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
 			sed -i "24c #LINK_IDLE_TIMEOUT=300 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
 			sed -i "26c AUTOCON_TIME=5 /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
 			sed -i "27c TDESCRIPTION="Este nodo no permite conexciones\n" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf"
+			clear
+			
+			echo "Ok, se han puesto los parametros por defecto en ModuleEchoLink.con"
+			sleep 5
+			echo ""
 			break;;
 			[nN]* ) echo ""
-			echo ""
-			echo ""
-			echo "volver"
-			echo ""
-			echo ""
-			echo ""
-			break;;			
+			break;;
+			#* )	echo "Por favor elige Y o N";;
 esac
 done;;
 
-3) 	echo ""
 
-while true
-do
-clear
-                              seguir=S
-			case $seguir in
-			[sS]* ) echo ""
-clear
-                              sudo sh abrir_editar_svxlink.sh
-			break;;
-			[nN]* ) echo ""
-			echo ""
-			echo ""
-			echo "volver"
-			echo ""
-			echo ""
-			echo ""
-			break;;			
-esac
-
-done;;
 4) 	echo ""
 
 while true
@@ -165,6 +166,31 @@ clear
 esac
 
 done;;	
+6) 	echo ""
+
+while true
+do
+clear
+                              seguir=S
+			case $seguir in
+			[sS]* ) echo ""
+clear
+                              sudo sh abrir_editar_svxlink.sh
+			break;;
+			[nN]* ) echo ""
+			echo ""
+			echo ""
+			echo "volver"
+			echo ""
+			echo ""
+			echo ""
+			break;;			
+esac
+
+done;;
+
+
+
 0) echo ""
 clear
 echo "   **************************************************"
