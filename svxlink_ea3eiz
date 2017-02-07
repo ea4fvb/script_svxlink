@@ -90,7 +90,7 @@ clear
 			case $seguir in
 			[sS]* ) echo ""
 clear
-                              lxterminal --geometry=100x40 -e sudo sh editar_svxlink.sh
+                              sudo sh abrir_editar_svxlink.sh
 			break;;
 			[nN]* ) echo ""
 			echo ""
@@ -137,7 +137,8 @@ clear
 clear
                               wget https://github.com/sm0svx/svxlink-sounds-en_US-heather/releases/download/14.08/svxlink-sounds-en_US-heather-16k-13.12.tar.bz2
 			tar jvfx svxlink-sounds-en_US-heather-16k-13.12.tar.bz2
-			sudo mkdir /usr/local/share/svxlink/sounds/en_US
+			sudo mkdir /usr/local/share/svxlink/sounds/en_US0
+			
 			cd en_US-heather-16k
 			sudo cp -r * /usr/local/share/svxlink/sounds/en_US
 			clear
