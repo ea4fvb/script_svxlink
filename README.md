@@ -25,19 +25,22 @@ Sigue las instrucciones del menú del script
    *                            by EA3EIZ                             *
    ********************************************************************
 
-   1) Actualizar Dispositivo (update y upgrade)
-   
-   2) Instalar svxlink 15.11
-   
-   3) Editar los ficheros ModuleEchoLink.conf y svxlink.conf
-     
-   4) Colocar autoarranque del svxlink al iniciar Linux, Orange pi o Raspberry pi  
+   1) Actualizar Dispositivo (update y upgrade)"
+
+   2) Instalar svxlink 15.11"
+
+   3) Poner parametros por defecto en ModuleEchoLink.conf"
+
+   4) Poner en el autoarranque el svxlink"
 
    5) Instalar ficheros de audio"
+
+   6) Abrir editor de los ficheros ModuleEchoLink.conf y svxlink"
+
    
    0)  Para Salir
 
-   Escoge una opción.. 1, 2, 3, 4, 5, 0
+   Escoge una opción.. 1, 2, 3, 4, 5, 6, 0
    
 ----------------------------------------------------------------------
 
