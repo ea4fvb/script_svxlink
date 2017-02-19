@@ -4,13 +4,13 @@ while true
 do
 clear
 
-echo "\33[1;32m   ********************************************************************"
-echo "   *  MENU PARA INSTALAR SVXLINK 15.11 y QTEL EN LINUX o RASPBERRY PI *"
-echo "   *                           \33[1;31mby EA3EIZ\33[1;32m                              *"
-echo "   ********************************************************************"
+echo "\33[1;32m   ************************************************************************"
+echo "   *  MENU PARA INSTALAR SVXLINK v1.5.99.5 y QTEL EN LINUX o RASPBERRY PI *"
+echo "   *                           \33[1;31mby EA3EIZ\33[1;32m                                  *"
+echo "   ************************************************************************"
 echo " "
 echo "\33[1;36m   1)\33[0m Actualizar Dispositivo (update y upgrade)"
-echo "\33[1;36m   2)\33[0m Instalar svxlink 15.11"
+echo "\33[1;36m   2)\33[0m Instalar svxlink"
 echo "\33[1;36m   3)\33[0m Poner parametros por defecto en ModuleEchoLink.conf"
 echo "\33[1;36m   4)\33[0m Poner en el autoarranque el svxlink"
 echo "\33[1;36m   5)\33[0m Instalar ficheros de audio"
