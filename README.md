@@ -20,14 +20,14 @@ Sigue las instrucciones del menú del script
 
 
 
-   ********************************************************************
-   *  MENU PARA INSTALAR SVXLINK 15.11 y QTEL EN LINUX o RASPBERRY PI *
-   *                            by EA3EIZ                             *
-   ********************************************************************
+   ***********************************************************************
+   *  MENU PARA INSTALAR SVXLINK v15.99.5 y QTEL EN LINUX o RASPBERRY PI *
+   *                            by EA3EIZ                                *
+   ***********************************************************************
 
    1) Actualizar Dispositivo (update y upgrade)"
 
-   2) Instalar svxlink 15.11"
+   2) Instalar svxlink"
 
    3) Poner parametros por defecto en ModuleEchoLink.conf"
 
