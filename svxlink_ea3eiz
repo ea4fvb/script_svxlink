@@ -61,7 +61,7 @@ clear
 			wget https://github.com/sm0svx/svxlink/archive/15.11.tar.gz
 			tar xzvf 15.11.tar.gz
 			sudo apt-get install g++ make libsigc++-2.0-dev libgsm1-dev libpopt-dev tcl8.5-dev libgcrypt11-dev libspeex-dev libasound2-dev alsa-utils vorbis-tools  cmake libqt4-dev
-			cd svxlink/src
+			cd cd svxlink-15.11/src
 			mkdir build
 			cd build
 			cmake ..
