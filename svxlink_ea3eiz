@@ -4,10 +4,10 @@ while true
 do
 clear
 
-echo "\33[1;32m   ************************************************************************"
-echo "   *  MENU PARA INSTALAR SVXLINK v1.5.99.5 y QTEL EN LINUX o RASPBERRY PI *"
-echo "   *                           \33[1;31mby EA3EIZ\33[1;32m                                  *"
-echo "   ************************************************************************"
+echo "\33[1;32m   ***************************************************************"
+echo "   *  MENU PARA INSTALAR SVXLINK  y QTEL EN LINUX o RASPBERRY PI *"
+echo "   *                           \33[1;31mby EA3EIZ\33[1;32m                         *"
+echo "   ***************************************************************"
 echo " "
 echo "\33[1;36m   1)\33[0m Actualizar Dispositivo (update y upgrade)"
 echo "\33[1;36m   2)\33[0m Instalar svxlink"
@@ -56,9 +56,10 @@ clear
 		    read -p 'Descargar e instalar svxlink Si/No ' installvar
 			case $installvar in
 			[sS]* ) echo ""
-			echo "Descargando svxlink 15.11"
+			echo "Descargando svxlink"
 			cd ~
-			git clone https://github.com/sm0svx/svxlink
+			wget https://github.com/sm0svx/svxlink/archive/15.11.tar.gz
+			tar xzvf 15.11.tar.gz
 			sudo apt-get install g++ make libsigc++-2.0-dev libgsm1-dev libpopt-dev tcl8.5-dev libgcrypt11-dev libspeex-dev libasound2-dev alsa-utils vorbis-tools  cmake libqt4-dev
 			cd svxlink/src
 			mkdir build
