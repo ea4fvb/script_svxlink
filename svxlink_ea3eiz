@@ -122,7 +122,7 @@ clear
 			cd /home/pi/.config
 			sudo mkdir autostart
 			cd /home/pi/script_svxlink
-			sudo mv inicio_svxlink.desktop /.config/autostart
+			sudo mv inicio_svxlink.desktop /home/pi/.config/autostart
 			sudo chmod 755 inicio_svxlink.desktop	
 			break;;
 			[nN]* ) echo ""
