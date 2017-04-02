@@ -121,7 +121,7 @@ clear
                                     clear
 			cd /home/pi/.config
 			sudo mkdir autostart
-			cd /home/pi/script_ea3eiz
+			cd /home/pi/script_svxlink
 			sudo mv inicio_svxlink.desktop /.config/autostart
 			sudo chmod 755 inicio_svxlink.desktop	
 			break;;
