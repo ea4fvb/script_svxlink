@@ -178,7 +178,8 @@ clear
 			case $seguir in
 			[sS]* ) echo ""
 clear
-                              sudo sh abrir_editar_svxlink.sh
+                                    cd /home/pi/script_svxlink
+                                    sudo sh abrir_editar_svxlink.sh
 			break;;
 			[nN]* ) echo ""
 			echo ""
