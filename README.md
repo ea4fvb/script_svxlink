@@ -38,9 +38,9 @@ Sigue las instrucciones del menú del script
    6) Abrir editor de los ficheros ModuleEchoLink.conf y svxlink"
 
    
-   0)  Para Salir
+   0)  <Para Salir>
 
-   Escoge una opción.. 1, 2, 3, 4, 5, 6, 0
+   Escoge una opción.. del 0 al 6
    
 ----------------------------------------------------------------------
 
