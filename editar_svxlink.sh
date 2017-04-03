@@ -317,9 +317,9 @@ do
 sed -i "227c PTT_PORT=/dev/ttyUSB0" /usr/local/etc/svxlink/svxlink.conf
 sed -i "226c PTT_TYPE=SerialPin" /usr/local/etc/svxlink/svxlink.conf
 sed -i "228c PTT_PIN=DTRRTS" /usr/local/etc/svxlink/svxlink.conf
-sed -i "10c #" /etc/rc.local
-sed -i "11c #" /etc/rc.local
-sed -i "12c #" /etc/rc.local
+#sed -i "10c #" /etc/rc.local
+#sed -i "11c #" /etc/rc.local
+#sed -i "12c #" /etc/rc.local
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -337,10 +337,11 @@ do
 sed -i "227c PTT_PORT=/dev/ttyAMA0" /usr/local/etc/svxlink/svxlink.conf
 sed -i "226c PTT_TYPE=GPIO" /usr/local/etc/svxlink/svxlink.conf
 sed -i "228c PTT_PIN=gpio17" /usr/local/etc/svxlink/svxlink.conf
-sed -i "14c echo "17" > /sys/class/gpio/export" /etc/rc.local
-sed -i "15c chmod 777 -R /sys/class/gpio/gpio17" /etc/rc.local
-sed -i "16c echo "out" > /sys/class/gpio/gpio17/direction" /etc/rc.local
-sed -i "17c exit 0" /etc/rc.local
+sudo cp -f /home/pi/script_svxlink/rc.local /etc
+#sed -i "14c echo "17" > /sys/class/gpio/export" /etc/rc.local
+#sed -i "15c chmod 777 -R /sys/class/gpio/gpio17" /etc/rc.local
+#sed -i "16c echo "out" > /sys/class/gpio/gpio17/direction" /etc/rc.local
+#sed -i "17c exit 0" /etc/rc.local
 			break;;
 			[nN]* ) echo ""
 			break;;
