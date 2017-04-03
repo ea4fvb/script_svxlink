@@ -1,0 +1,23 @@
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will "exit 0" on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+
+rm -f /usr/share/icons/hicolor/scalable/apps/libreoffice-*.svg || true
+rm -f /usr/share/applications/squeak.desktop || true
+
+echo "17" > /sys/class/gpio/export
+chmod 777 -R /sys/class/gpio/gpio17
+echo "out" > /sys/class/gpio/gpio17/direction
+
+svxlink
+
+exit 0
