@@ -37,6 +37,7 @@ Sigue las instrucciones del menú del script
 
    6) Abrir editor de los ficheros ModuleEchoLink.conf y svxlink"
 
+   7) Abrir svxlink
    
       0  Para Salir
 

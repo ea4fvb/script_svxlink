@@ -193,7 +193,28 @@ clear
 esac
 
 done;;
+6) 	echo ""
 
+while true
+do
+clear
+                              seguir=S
+			case $seguir in
+			[sS]* ) echo ""
+clear
+                                    sudo svxlink
+                                    break;;
+			[nN]* ) echo ""
+			echo ""
+			echo ""
+			echo "volver"
+			echo ""
+			echo ""
+			echo ""
+			break;;			
+esac
+
+done;;
 
 
 0) echo ""
