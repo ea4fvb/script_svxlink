@@ -193,7 +193,7 @@ clear
 esac
 
 done;;
-6) 	echo ""
+7) 	echo ""
 
 while true
 do
